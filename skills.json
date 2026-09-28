@@ -1,0 +1,39 @@
+{
+  "katalog": "kiferdigheter.no",
+  "beskrivelse": "Norske AI-ferdigheter (Agent Skills) som virker i Claude, ChatGPT og Gemini.",
+  "oppdatert": "2026-09-28",
+  "ferdigheter": [
+    {
+      "navn": "nynorsk-korrektur",
+      "tittel": "Nynorsk-korrektur",
+      "beskrivelse": "Retter bokmål og talemålsnært språk til korrekt nynorsk, med forklaring av rettingene.",
+      "tagger": ["språk", "korrektur", "nynorsk"],
+      "versjon": "1.0",
+      "sti": "skills/nynorsk-korrektur/SKILL.md"
+    },
+    {
+      "navn": "skattemelding-hjelp",
+      "tittel": "Skattemelding-hjelp",
+      "beskrivelse": "Hjelper deg gjennom norsk skattemelding: fradrag, kontroll og frister.",
+      "tagger": ["skatt", "økonomi", "offentlig"],
+      "versjon": "1.0",
+      "sti": "skills/skattemelding-hjelp/SKILL.md"
+    },
+    {
+      "navn": "nav-brevhjelp",
+      "tittel": "NAV-brevhjelp",
+      "beskrivelse": "Skriver utkast til NAV og forklarer NAV-vedtak i klar norsk.",
+      "tagger": ["nav", "offentlig", "brev"],
+      "versjon": "1.0",
+      "sti": "skills/nav-brevhjelp/SKILL.md"
+    },
+    {
+      "navn": "mote-referat",
+      "tittel": "Møtereferat",
+      "beskrivelse": "Gjør rotete notater om til strukturerte møtereferater med vedtak og aksjonspunkter.",
+      "tagger": ["jobb", "produktivitet", "møte"],
+      "versjon": "1.0",
+      "sti": "skills/mote-referat/SKILL.md"
+    }
+  ]
+}

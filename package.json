@@ -1,0 +1,17 @@
+{
+  "name": "kiferdigheter.no",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Norsk katalog over AI-ferdigheter (Agent Skills) + nettside for kiferdigheter.no",
+  "type": "module",
+  "scripts": {
+    "valider": "bun run scripts/valider-skills.ts",
+    "sjekk": "bunx biome check . && bunx tsgo --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.2.0",
+    "@types/bun": "^1.4.2",
+    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
+    "typescript": "5.9.2"
+  }
+}

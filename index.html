@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KI-ferdigheter.no – norske ferdigheter for KI-assistenter</title>
+  <meta name="description" content="Norsk katalog over AI-ferdigheter (skills) for Claude, ChatGPT og Gemini. Alle ferdigheter er på norsk." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topp">
+    <div class="brett nav">
+      <a class="logo" href="#topp">KI-ferdigheter<span>.no</span></a>
+      <nav>
+        <a href="#hva-er-ferdighet">Hva er en ferdighet?</a>
+        <a href="#installer">Installer</a>
+        <a href="#katalog">Ferdigheter</a>
+        <a href="#bidra">Bidra</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="topp">
+    <section class="brett hero">
+      <p class="kicker">Norsk katalog · Agent Skills-standard</p>
+      <h1>Norske ferdigheter for KI-assistenten din</h1>
+      <p class="ingress">
+        En <strong>ferdighet</strong> er en gjenbrukbar instruksjon som gjør KI-assistenten god på
+        norske oppgaver – NAV-brev, skattemelding, nynorsk, møtereferat. Alle ferdighetene her er på
+        <strong>norsk</strong> og virker i <strong>Claude</strong>, <strong>ChatGPT</strong> og <strong>Gemini</strong>.
+      </p>
+      <div class="knapper">
+        <a class="knapp primar" href="#katalog">Se ferdighetene</a>
+        <a class="knapp" href="#installer">Slik installerer du</a>
+      </div>
+      <p class="kildekode">
+        Claude Code-kilde:
+        <code>/plugin marketplace add sundsdal/kiferdighet</code>
+        <button class="kopier" data-kopier="/plugin marketplace add sundsdal/kiferdighet">Kopier</button>
+      </p>
+    </section>
+
+    <section id="hva-er-ferdighet" class="brett seksjon">
+      <h2>Hva er en ferdighet?</h2>
+      <p>
+        En ferdighet er en mappe med en fil som heter <code>SKILL.md</code>. Filen starter med litt
+        metadata (<code>name</code> og <code>description</code>) og fortsetter med instruksjoner på
+        vanlig norsk som assistenten følger når oppgaven dukker opp.
+      </p>
+      <div class="kort-grid">
+        <article class="kort">
+          <h3>I Claude heter det <em>skill</em></h3>
+          <p>Claude oppdager ferdigheter automatisk ut fra beskrivelsen, eller du kaller dem med <code>/navn</code>. Samlinger distribueres som en <em>plugin marketplace</em> – det er det dette repoet er.</p>
+        </article>
+        <article class="kort">
+          <h3>Samme format i ChatGPT og Gemini</h3>
+          <p><code>SKILL.md</code> er en åpen standard (Agent Skills). Samme fil virker i ChatGPT (som GPT-instruks eller <code>~/.agents/skills/</code>) og Gemini (<code>~/.gemini/skills/</code>).</p>
+        </article>
+        <article class="kort">
+          <h3>Slik bruker du dem</h3>
+          <p>Installer én gang (se under). Deretter skjønner assistenten selv når ferdigheten passer – f.eks. «hjelp meg med skattemeldingen» trigger skattemelding-hjelp.</p>
+        </article>
+      </div>
+      <details class="eksempel">
+        <summary>Se eksempel på SKILL.md</summary>
+<pre><code>---
+name: mote-referat
+description: Skriver strukturerte møtereferater på norsk …
+---
+
+# Møtereferat
+Du skriver ryddige møtereferater på norsk …</code></pre>
+      </details>
+    </section>
+
+    <section id="installer" class="brett seksjon">
+      <h2>Slik installerer du</h2>
+      <p>Velg assistenten din. Ferdighetene er de samme – bare installasjonsmåten varierer.</p>
+      <div class="faner" role="tablist" aria-label="Installer-guider">
+        <button role="tab" aria-selected="true" data-fane="claude-code">Claude Code</button>
+        <button role="tab" aria-selected="false" data-fane="claude">Claude-appen</button>
+        <button role="tab" aria-selected="false" data-fane="chatgpt">ChatGPT</button>
+        <button role="tab" aria-selected="false" data-fane="gemini">Gemini</button>
+      </div>
+      <div class="faneinnhold" data-panel="claude-code">
+        <ol>
+          <li>Legg til katalogen som kilde (én gang):
+            <code>/plugin marketplace add sundsdal/kiferdighet</code></li>
+          <li>Installer samlingen: <code>/plugin install kiferdigheter</code></li>
+          <li>Bruk: skriv f.eks. «hjelp meg med NAV-brevet» – eller kall eksplisitt med <code>/nav-brevhjelp</code>.</li>
+        </ol>
+      </div>
+      <div class="faneinnhold" data-panel="claude" hidden>
+        <ol>
+          <li>Åpne mappen <code>skills/&lt;navn&gt;</code> her i repoet og kopier innholdet i <code>SKILL.md</code>.</li>
+          <li>Opprett en ny <em>skill</em> i Claude og lim inn innholdet.</li>
+          <li>Alternativt (CLI): kopier mappen til <code>~/.claude/skills/&lt;navn&gt;/</code>.</li>
+        </ol>
+      </div>
+      <div class="faneinnhold" data-panel="chatgpt" hidden>
+        <ol>
+          <li>Lim <code>SKILL.md</code>-innholdet inn som instruksjon i en egen GPT.</li>
+          <li>Alternativt (Codex/CLI): legg mappen under <code>~/.agents/skills/&lt;navn&gt;/</code>.</li>
+        </ol>
+      </div>
+      <div class="faneinnhold" data-panel="gemini" hidden>
+        <ol>
+          <li>Kopier ønsket mappe:
+            <code>cp -R skills/&lt;navn&gt; ~/.gemini/skills/&lt;navn&gt;</code></li>
+          <li>Start Gemini CLI – ferdigheten aktiveres automatisk når den passer.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="katalog" class="brett seksjon">
+      <h2>Oversikt over norske ferdigheter</h2>
+      <div class="filter">
+        <input id="sok" type="search" placeholder="Søk, f.eks. skatt, NAV, nynorsk …" aria-label="Søk i ferdigheter" />
+        <div id="tagger" class="tagger" aria-label="Filtrer på tagg"></div>
+      </div>
+      <div id="liste" class="kort-grid" aria-live="polite"></div>
+      <p id="tom" class="tom" hidden>Ingen ferdigheter matcher søket. <button id="nullstill">Nullstill filter</button></p>
+    </section>
+
+    <section id="bidra" class="brett seksjon">
+      <h2>Bidra med en ferdighet</h2>
+      <ol>
+        <li>Lag <code>skills/&lt;navn&gt;/SKILL.md</code> på norsk etter <a href="https://agentskills.io/specification">Agent Skills-spec</a>.</li>
+        <li>Legg til innslag i <code>skills.json</code> med tagger.</li>
+        <li>Kjør <code>bun run valider</code> og send pull request.</li>
+      </ol>
+      <p>Tilbakemeldinger gis via GitHub Issues. Vurderinger og stjerner på siden er bevisst droppet for nå.</p>
+    </section>
+  </main>
+
+  <footer class="bunn">
+    <div class="brett">
+      <p>KI-ferdigheter.no · Åpen kildekode (MIT) · <a href="https://agentskills.io/specification">Agent Skills-spec</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

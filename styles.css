@@ -1,0 +1,288 @@
+:root {
+  --bakgrunn: #faf9f7;
+  --flate: #ffffff;
+  --tekst: #1c1917;
+  --dempa: #57534e;
+  --linje: #e7e5e4;
+  --aksent: #b91c1c;
+  --aksent-mork: #7f1d1d;
+  --blaa: #1d4ed8;
+  --radius: 12px;
+  --brett: 64rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bakgrunn);
+  color: var(--tekst);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+.brett {
+  max-width: var(--brett);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.topp {
+  position: sticky;
+  top: 0;
+  background: rgba(250, 249, 247, 0.95);
+  border-bottom: 1px solid var(--linje);
+  z-index: 10;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.logo {
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--tekst);
+}
+.logo span {
+  color: var(--aksent);
+}
+.nav nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.nav nav a {
+  color: var(--dempa);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.nav nav a:hover {
+  color: var(--tekst);
+  text-decoration: underline;
+}
+
+.hero {
+  padding: 3rem 1.25rem 2rem;
+}
+.kicker {
+  color: var(--aksent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.8rem;
+  margin: 0;
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
+  margin: 0.5rem 0 1rem;
+}
+.ingress {
+  font-size: 1.15rem;
+  color: var(--dempa);
+  max-width: 44rem;
+}
+
+.knapper {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+.knapp {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--linje);
+  background: var(--flate);
+  color: var(--tekst);
+  text-decoration: none;
+  font-weight: 600;
+}
+.knapp.primar {
+  background: var(--aksent);
+  border-color: var(--aksent);
+  color: #fff;
+}
+.knapp.primar:hover {
+  background: var(--aksent-mork);
+}
+
+.kildekode {
+  background: var(--flate);
+  border: 1px solid var(--linje);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+}
+code {
+  background: #f5f5f4;
+  padding: 0.15em 0.4em;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+.kopier {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border: 1px solid var(--linje);
+  background: var(--bakgrunn);
+  border-radius: 8px;
+  padding: 0.25rem 0.6rem;
+}
+
+.seksjon {
+  padding: 2rem 1.25rem;
+}
+.seksjon h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.kort-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.kort {
+  background: var(--flate);
+  border: 1px solid var(--linje);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.2rem;
+}
+.kort h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+}
+.kort p {
+  margin: 0.3rem 0;
+  color: var(--dempa);
+  font-size: 0.95rem;
+}
+.kort .tittel {
+  color: var(--tekst);
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0;
+}
+.tagg {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #f5f5f4;
+  border: 1px solid var(--linje);
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+  margin: 0.15rem 0.15rem 0 0;
+  color: var(--dempa);
+}
+.tagg.valgt {
+  background: var(--tekst);
+  color: #fff;
+  border-color: var(--tekst);
+}
+.kort .lenker {
+  margin-top: 0.7rem;
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+.kort .lenker a {
+  color: var(--blaa);
+}
+
+.eksempel {
+  margin-top: 1rem;
+  background: var(--flate);
+  border: 1px solid var(--linje);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+}
+.eksempel pre {
+  overflow-x: auto;
+}
+
+.faner {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+.faner button {
+  border: 1px solid var(--linje);
+  background: var(--flate);
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.faner button[aria-selected="true"] {
+  background: var(--tekst);
+  color: #fff;
+  border-color: var(--tekst);
+}
+.faneinnhold {
+  background: var(--flate);
+  border: 1px solid var(--linje);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+}
+
+.filter {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+#sok {
+  padding: 0.65rem 0.9rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--linje);
+  font-size: 1rem;
+  width: 100%;
+}
+.tagger {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.tagger button {
+  border: 1px solid var(--linje);
+  background: var(--flate);
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.tagger button.valgt {
+  background: var(--tekst);
+  color: #fff;
+  border-color: var(--tekst);
+}
+
+.tom {
+  color: var(--dempa);
+}
+.tom button {
+  cursor: pointer;
+}
+
+.bunn {
+  border-top: 1px solid var(--linje);
+  margin-top: 2rem;
+  padding: 1.5rem 0;
+  color: var(--dempa);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 40rem) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

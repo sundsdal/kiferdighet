@@ -1,0 +1,8 @@
+{
+  "name": "kiferdigheter",
+  "description": "Norske AI-ferdigheter (Agent Skills): NAV-brev, skattemelding, nynorsk-korrektur, møtereferat og mer. Alle ferdigheter er på norsk.",
+  "version": "0.1.0",
+  "author": { "name": "KI-ferdigheter.no" },
+  "license": "MIT",
+  "homepage": "https://kiferdigheter.no"
+}

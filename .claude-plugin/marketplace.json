@@ -1,0 +1,13 @@
+{
+  "name": "kiferdigheter-marketplace",
+  "description": "Markedsplass for norske AI-ferdigheter (kiferdigheter.no). Installer med: /plugin marketplace add sundsdal/kiferdighet",
+  "owner": { "name": "KI-ferdigheter.no", "url": "https://kiferdigheter.no" },
+  "plugins": [
+    {
+      "name": "kiferdigheter",
+      "source": ".",
+      "description": "Norske AI-ferdigheter: NAV-brev, skattemelding, nynorsk-korrektur, møtereferat og mer.",
+      "version": "0.1.0"
+    }
+  ]
+}
