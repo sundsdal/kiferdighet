@@ -15,6 +15,7 @@
         <a href="#hva-er-ferdighet">Hva er en ferdighet?</a>
         <a href="#installer">Installer</a>
         <a href="#katalog">Ferdigheter</a>
+        <a href="#ressurser">Ressurser</a>
         <a href="#bidra">Bidra</a>
       </nav>
     </div>
@@ -60,6 +61,25 @@
           <h3>Slik bruker du dem</h3>
           <p>Installer én gang (se under). Deretter skjønner assistenten selv når ferdigheten passer – f.eks. «hjelp meg med skattemeldingen» trigger skattemelding-hjelp.</p>
         </article>
+      </div>
+      <h3>Ferdighet, verktøy eller instruksjon?</h3>
+      <p>
+        En ferdighet er ikke det samme som tilgang til data. Agenten laster bare
+        beskrivelsen (30–50 tokens) inn i minnet – selve instruksjonene og eventuelle
+        skript hentes først når oppgaven matcher. Slik skiller byggesteinene seg:
+      </p>
+      <div class="tabell-rull">
+        <table class="tabell">
+          <thead>
+            <tr><th>Type</th><th>Hva det er</th><th>Når det aktiveres</th><th>Norsk eksempel</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Ferdighet</strong></td><td>Oppskrift: slik løser du oppgaven, steg for steg</td><td>Ved behov – semantisk match eller <code>/kommando</code></td><td>Valider org.nr. med Modulus 11 før Brreg-oppslag</td></tr>
+            <tr><td><strong>Verktøy (MCP)</strong></td><td>Rå tilgang: selve dataene og API-ene</td><td>Alltid tilgjengelig som verktøykall</td><td>Direkte spørring mot et register-API</td></tr>
+            <tr><td><strong>Instruksjon</strong></td><td>Globale regler som alltid gjelder</td><td>Lastes automatisk</td><td>«Bruk Aksel-tokens, aldri hardkodede farger»</td></tr>
+            <tr><td><strong>Spesialistagent</strong></td><td>Avgrenset rolle med egne verktøy</td><td>Kalles eksplisitt inn</td><td>Sikkerhetsrevisor med kun lesetilgang</td></tr>
+          </tbody>
+        </table>
       </div>
       <details class="eksempel">
         <summary>Se eksempel på SKILL.md</summary>
@@ -120,6 +140,48 @@ Du skriver ryddige møtereferater på norsk …</code></pre>
       </div>
       <div id="liste" class="kort-grid" aria-live="polite"></div>
       <p id="tom" class="tom" hidden>Ingen ferdigheter matcher søket. <button id="nullstill">Nullstill filter</button></p>
+    </section>
+
+    <section id="ressurser" class="brett seksjon">
+      <h2>Norske ressurser og miljøer</h2>
+      <p>
+        Norske miljøer som NAV IT, DNB, SINTEF, Deploi og Digital Norway bruker allerede
+        Agent Skills mot nasjonale registre og rammeverk. Her er sentrale kunnskapskilder på .no:
+      </p>
+      <div class="kort-grid">
+        <article class="kort">
+          <p class="tittel"><a href="https://ki-utvikling.nav.no">ki-utvikling.nav.no</a></p>
+          <p>NAVs utviklerportal: forvaltning av SKILL.md, skillet mot MCP og spesialistagenter.</p>
+        </article>
+        <article class="kort">
+          <p class="tittel"><a href="https://kode24.no">kode24.no</a></p>
+          <p>Praktisk SKILL.md-stoff: progressiv lasting, deterministiske skript og jus rundt KI-agenter.</p>
+        </article>
+        <article class="kort">
+          <p class="tittel"><a href="https://eufemia.dnb.no">eufemia.dnb.no</a></p>
+          <p>DNBs designsystem og distribusjon av Eufemia-ferdigheter for agenter.</p>
+        </article>
+        <article class="kort">
+          <p class="tittel"><a href="https://deploi.no">deploi.no</a></p>
+          <p>Norsk sky-leverandør med Agent Skills for serverdrift fra terminalen.</p>
+        </article>
+        <article class="kort">
+          <p class="tittel"><a href="https://digitalnorway.com">digitalnorway.com</a></p>
+          <p>Nasjonal veileder for innføring av KI-agenter og erfaringsdeling fra offentlig sektor.</p>
+        </article>
+        <article class="kort">
+          <p class="tittel"><a href="https://sikkerhet.bouvet.no">sikkerhet.bouvet.no</a></p>
+          <p>Trusselmodellering av agenter: minste-privilegium for MCP og vern mot prompt-injeksjon.</p>
+        </article>
+        <article class="kort">
+          <p class="tittel"><a href="https://sintef.no">sintef.no</a></p>
+          <p>SINTEF AgentLab: forskning på agentiske arbeidsflyter for industrien.</p>
+        </article>
+        <article class="kort">
+          <p class="tittel"><a href="https://utdannet.no">utdannet.no</a></p>
+          <p>Pedagogiske gjennomganger av skill-struktur og agentgrenser.</p>
+        </article>
+      </div>
     </section>
 
     <section id="bidra" class="brett seksjon">

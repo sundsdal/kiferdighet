@@ -1,0 +1,30 @@
+# NAIS applikasjonsmanifest – mal
+# Tilpass til din app og valider mot NAIS JSON-skjemaet før deploy.
+apiVersion: nais.io/v1alpha1
+kind: Application
+metadata:
+  name: min-app
+  namespace: mitt-team
+  labels:
+    team: mitt-team
+spec:
+  image: europe-north1-docker.pkg.dev/mitt-prosjekt/mitt-repo/min-app:latest
+  port: 8080
+  liveness:
+    path: /internal/isalive
+    initialDelay: 10
+    timeout: 5
+  readiness:
+    path: /internal/isready
+    initialDelay: 10
+    timeout: 5
+  resources:
+    limits:
+      cpu: 1000m
+      memory: 512Mi
+    requests:
+      cpu: 200m
+      memory: 256Mi
+  replicas:
+    min: 2
+    max: 4

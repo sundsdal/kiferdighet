@@ -61,6 +61,15 @@ Full guide: [Slik installerer du](index.html#installer).
 | [skattemelding-hjelp](skills/skattemelding-hjelp/SKILL.md) | Hjelper med norsk skattemelding og fradrag | skatt, økonomi, offentlig |
 | [nav-brevhjelp](skills/nav-brevhjelp/SKILL.md) | Skriver og forklarer NAV-brev i klar norsk | nav, offentlig, brev |
 | [mote-referat](skills/mote-referat/SKILL.md) | Skriver strukturerte møtereferater på norsk | jobb, produktivitet, møte |
+| [brreg-oppslag](skills/brreg-oppslag/SKILL.md) | Oppslag i Brønnøysundregistrene med Modulus 11-validering | brreg, register, bedrift, offentlig |
+| [ssb-statistikk](skills/ssb-statistikk/SKILL.md) | SSB-statistikk via PxWebApi og KPI-justering | ssb, statistikk, økonomi |
+| [lovdata-juridisk-analyse](skills/lovdata-juridisk-analyse/SKILL.md) | Juridisk analyse etter rettskildelære, GDPR og AI Act | jus, lovdata, personvern |
+| [nav-aksel-utvikling](skills/nav-aksel-utvikling/SKILL.md) | React med Aksel-tokens og NAIS-manifester | nav, design, frontend, wcag |
+| [met-yr-varsel](skills/met-yr-varsel/SKILL.md) | Værprognoser fra MET Locationforecast 2.0 | vær, yr, api |
+| [skatt-mva-kontroll](skills/skatt-mva-kontroll/SKILL.md) | MVA-beregning, bokføringskontroll og SAF-T | skatt, mva, økonomi, bedrift |
+| [kartverket-eiendom](skills/kartverket-eiendom/SKILL.md) | Eiendom på gnr/bnr og offisielle stedsnavn | eiendom, kart, offentlig |
+| [dnb-eufemia](skills/dnb-eufemia/SKILL.md) | Komponentvalg mot DNB Eufemia | design, frontend, bank |
+| [deploi-serverdrift](skills/deploi-serverdrift/SKILL.md) | Norske servere hos Deploi fra terminalen | drift, sky, server |
 
 Maskinlesbar katalog: [skills.json](skills.json) (brukes av nettsiden).
 

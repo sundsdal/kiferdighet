@@ -34,6 +34,78 @@
       "tagger": ["jobb", "produktivitet", "møte"],
       "versjon": "1.0",
       "sti": "skills/mote-referat/SKILL.md"
+    },
+    {
+      "navn": "brreg-oppslag",
+      "tittel": "Brreg-oppslag",
+      "beskrivelse": "Slår opp virksomheter, organisasjonsnumre og MVA-status i Brønnøysundregistrene, med Modulus 11-validering.",
+      "tagger": ["brreg", "register", "bedrift", "offentlig"],
+      "versjon": "1.0",
+      "sti": "skills/brreg-oppslag/SKILL.md"
+    },
+    {
+      "navn": "ssb-statistikk",
+      "tittel": "SSB-statistikk",
+      "beskrivelse": "Henter offisiell statistikk fra SSB via PxWebApi og KPI-justerer beløp.",
+      "tagger": ["ssb", "statistikk", "økonomi"],
+      "versjon": "1.0",
+      "sti": "skills/ssb-statistikk/SKILL.md"
+    },
+    {
+      "navn": "lovdata-juridisk-analyse",
+      "tittel": "Juridisk analyse",
+      "beskrivelse": "Strukturerer juridiske vurderinger etter norsk rettskildelære, GDPR og AI Act.",
+      "tagger": ["jus", "lovdata", "personvern", "ai-act"],
+      "versjon": "1.0",
+      "sti": "skills/lovdata-juridisk-analyse/SKILL.md"
+    },
+    {
+      "navn": "nav-aksel-utvikling",
+      "tittel": "NAV Aksel-utvikling",
+      "beskrivelse": "Bygger WCAG-riktige React-grensesnitt med Aksel-tokens og NAIS-manifester.",
+      "tagger": ["nav", "design", "frontend", "wcag"],
+      "versjon": "1.0",
+      "sti": "skills/nav-aksel-utvikling/SKILL.md"
+    },
+    {
+      "navn": "met-yr-varsel",
+      "tittel": "Yr-værvarsel",
+      "beskrivelse": "Henter værprognoser fra Meteorologisk institutt etter METs vilkår.",
+      "tagger": ["vær", "yr", "api"],
+      "versjon": "1.0",
+      "sti": "skills/met-yr-varsel/SKILL.md"
+    },
+    {
+      "navn": "skatt-mva-kontroll",
+      "tittel": "MVA-kontroll",
+      "beskrivelse": "Beregner MVA med korrekte satser og kontrollerer bokføring og SAF-T.",
+      "tagger": ["skatt", "mva", "økonomi", "bedrift"],
+      "versjon": "1.0",
+      "sti": "skills/skatt-mva-kontroll/SKILL.md"
+    },
+    {
+      "navn": "kartverket-eiendom",
+      "tittel": "Eiendomsoppslag",
+      "beskrivelse": "Slår opp eiendom på gnr/bnr og avklarer offisielle stedsnavn.",
+      "tagger": ["eiendom", "kart", "offentlig"],
+      "versjon": "1.0",
+      "sti": "skills/kartverket-eiendom/SKILL.md"
+    },
+    {
+      "navn": "dnb-eufemia",
+      "tittel": "DNB Eufemia",
+      "beskrivelse": "Komponentvalg og prop-validering mot DNBs designsystem Eufemia.",
+      "tagger": ["design", "frontend", "bank"],
+      "versjon": "1.0",
+      "sti": "skills/dnb-eufemia/SKILL.md"
+    },
+    {
+      "navn": "deploi-serverdrift",
+      "tittel": "Deploi-serverdrift",
+      "beskrivelse": "Provisjonerer og drifter norske servere hos Deploi fra terminalen.",
+      "tagger": ["drift", "sky", "server"],
+      "versjon": "1.0",
+      "sti": "skills/deploi-serverdrift/SKILL.md"
     }
   ]
 }

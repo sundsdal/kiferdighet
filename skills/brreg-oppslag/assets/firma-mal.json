@@ -1,0 +1,12 @@
+{
+  "mal": "firmaoppslag",
+  "beskrivelse": "Mal for strukturert svar fra brreg-oppslag. Fyll inn feltene fra API-responsen.",
+  "felt": {
+    "virksomhet": "",
+    "organisasjonsnummer": "",
+    "selskapsform": "",
+    "status": "Aktiv / Konkurs / Under avvikling / Slettet",
+    "mvaRegistrering": "Registrert / Ikke registrert",
+    "forretningsadresse": ""
+  }
+}
